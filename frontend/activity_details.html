@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Dettagli Attività</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="taskTitle">Task: Analisi Requisiti</h1>
+        <button onclick="window.history.back()">Indietro</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h3>Impostazioni Attività</h3>
+            <p>Descrizione: Analizzare i documenti RAD e SDD per la mappatura.</p>
+            <hr>
+            <div style="display: flex; gap: 20px;">
+                <div>
+                    <label>Priorità:</label><br>
+                    <select id="priority">
+                        <option value="Bassa">Bassa</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta" selected>Alta</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Scadenza (DeadLine):</label><br>
+                    <input type="date" id="deadline" value="2026-01-25">
+                </div>
+            </div>
+            <button style="margin-top: 20px;" onclick="saveTaskDetails()">Salva Modifiche</button>
+        </div>
+
+        <div class="card">
+            <h3>Commenti e Feedback</h3>
+            <div id="commentsList" style="margin-bottom: 15px;">
+                <p><strong>Pasquale (PM):</strong> Eddy, carica anche lo schema del database qui. <small>10:30</small></p>
+            </div>
+            <textarea id="commentText" placeholder="Aggiungi un commento..." style="width: 100%; border-radius: 5px;"></textarea>
+            <button onclick="postComment()">Invia Commento</button>
+        </div>
+    </div>
+</body>
+</html>
