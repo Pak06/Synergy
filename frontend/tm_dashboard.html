@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Dashboard Team Member</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h1>Synergy</h1>
+        <div>
+            <span>Benvenuto, Team Member</span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Le Mie Attività</h2>
+        <div id="tasks-container">
+            <div class="card">
+                <h3>Setup Ambiente Sviluppo</h3>
+                <p>Progetto: Modulo Contabilità</p>
+                <p>Scadenza: <strong>25/01/2026</strong> | Priorità: <span style="color:red">Alta</span></p>
+                
+                <label>Cambia Stato:</label>
+                <select onchange="changeTaskStatus(101, this.value)">
+                    <option value="Da Fare">Da Fare</option>
+                    <option value="In Corso" selected>In Corso</option>
+                    <option value="Completato">Completato</option>
+                </select>
+                <button style="margin-top:10px" onclick="window.location.href='chat.html'">Apri Chat</button>
+            </div>
+        </div>
+    </div>
+    <script src="synergy_logic.js"></script>
+</body>
+</html>
