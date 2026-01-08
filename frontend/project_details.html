@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Dettagli Progetto</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="projTitle">Caricamento progetto...</h1>
+        <button onclick="window.history.back()">Indietro</button>
+    </div>
+
+    <div class="container dashboard-container">
+        <aside>
+            <div class="card">
+                <h4>Documenti</h4>
+                <ul id="docList">
+                    <li><a href="#">Specifica_Tecnica.pdf</a></li>
+                </ul>
+                <button size="small" onclick="uploadDocument()">+ Carica</button>
+            </div>
+            <div class="card">
+                <h4>Team</h4>
+                <ul id="teamList">
+                    <li>Eddy (Assegnatario)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <div style="display: flex; justify-content: space-between;">
+                <h3>Attività (Tasks)</h3>
+                <button onclick="showTaskForm()">+ Nuova Task</button>
+            </div>
+            <div id="tasksList">
+                <div class="card priority-high">
+                    <h4>Setup ambiente di sviluppo</h4>
+                    <p>Scadenza: 25/01 | Stato: Da Fare</p>
+                    <button onclick="viewTask(101)">Dettagli</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
