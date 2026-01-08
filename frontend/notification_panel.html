@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Notifiche</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 600px;">
+        <h2>Centro Notifiche</h2>
+        <div id="notifications-list">
+            <div class="card" style="border-left-color: var(--warning-color);">
+                <p><strong>Nuova Task:</strong> Ti è stata assegnata l'attività "Setup Database".</p>
+                <small>Oggi, 09:15</small>
+            </div>
+            <div class="card" style="border-left-color: var(--success-color);">
+                <p><strong>Documento Aggiornato:</strong> Pasquale ha caricato una nuova versione di "SDD_Synergy.pdf".</p>
+                <small>Ieri, 17:45</small>
+            </div>
+        </div>
+        <button onclick="clearAllNotifications()" style="background: var(--secondary-color);">Segna tutte come lette</button>
+    </div>
+</body>
+</html>
