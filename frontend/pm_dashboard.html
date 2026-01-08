@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Dashboard Project Manager</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h1>Synergy - Area Manager</h1>
+        <div>
+            <button onclick="window.location.href='create_project.html'">+ Nuovo Progetto</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>I Tuoi Progetti Gestiti</h2>
+        <div id="projects-container">
+            <div class="card">
+                <h3>Sviluppo Modulo Contabilità</h3>
+                <p>Stato: <span class="status-badge status-progress">In Corso</span></p>
+                <p>Team: 4 Membri | Attività: 12 aperte</p>
+                <button onclick="viewProjectDetails(1)">Gestisci Progetto</button>
+            </div>
+        </div>
+    </div>
+    <script src="synergy_logic.js"></script>
+</body>
+</html>
