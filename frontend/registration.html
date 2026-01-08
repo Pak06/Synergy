@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Registrazione</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 500px; margin-top: 50px;">
+        <div class="card">
+            <h2 style="text-align: center;">Crea il tuo Account</h2>
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Nome" required style="width: 48%; margin-bottom: 10px;">
+                <input type="text" id="surname" placeholder="Cognome" required style="width: 48%; margin-bottom: 10px;">
+                <input type="text" id="fiscal_code" placeholder="Codice Fiscale" required style="width: 100%; margin-bottom: 10px;">
+                <label>Data di Nascita:</label>
+                <input type="date" id="date_of_birth" required style="width: 100%; margin-bottom: 10px;">
+                <hr>
+                <input type="text" id="username" placeholder="Username" required style="width: 100%; margin-bottom: 10px;">
+                <input type="password" id="password" placeholder="Password" required style="width: 100%; margin-bottom: 15px;">
+                
+                <label>Seleziona il tuo Ruolo:</label>
+                <select id="role" required style="width: 100%; padding: 10px; margin-bottom: 20px;">
+                    <option value="TeamMember">Membro del Team (Operativo)</option>
+                    <option value="ProjectManager">Project Manager (Gestore)</option>
+                </select>
+                
+                <button type="submit" style="width: 100%;">Registrati</button>
+            </form>
+            <p style="text-align: center;"><a href="login.html">Torna al login</a></p>
+        </div>
+    </div>
+    <script src="synergy_logic.js"></script>
+</body>
+</html>
