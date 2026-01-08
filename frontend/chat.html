@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Chat</title>
+    <link rel="stylesheet" href="synergy_style.css">
+    <style>
+        .chat-box { height: 400px; overflow-y: scroll; background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
+        .msg-received { text-align: left; color: #2c3e50; margin-bottom: 10px; }
+        .msg-sent { text-align: right; color: #3498db; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container" style="max-width: 500px;">
+        <h3>Chat con Eddy (Team Member)</h3>
+        <div class="chat-box" id="chatWindow">
+            <div class="msg-received"><strong>Eddy:</strong> Hai visto le nuove specifiche?</div>
+            <div class="msg-sent"><strong>Tu:</strong> Le sto guardando ora, sembrano ok.</div>
+        </div>
+        <div style="margin-top: 15px; display: flex;">
+            <input type="text" id="msgInput" placeholder="Scrivi un messaggio..." style="flex: 1; padding: 10px;">
+            <button onclick="sendMessage()">Invia</button>
+        </div>
+    </div>
+</body>
+</html>
