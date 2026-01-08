@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #2c3e50; /* Blu scuro professionale */
+    --secondary-color: #34495e;
+    --accent-color: #3498db;   /* Azzurro per azioni principali */
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --bg-light: #f4f7f6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    color: #333;
+}
+
+.toolbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Card per Progetti e Task (Richieste dai test di usabilità) */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--accent-color);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status-todo { background: #eee; color: #666; }
+.status-progress { background: #d1ecf1; color: #0c5460; }
+.status-done { background: #d4edda; color: #155724; }
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
