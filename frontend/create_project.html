@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Synergy - Crea Progetto</title>
+    <link rel="stylesheet" href="synergy_style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 600px;">
+        <h2>Avvia un Nuovo Progetto</h2>
+        <form id="createProjectForm">
+            <label>Nome Progetto:</label>
+            <input type="text" id="projectName" placeholder="es. Sviluppo Web App" required>
+            
+            <label>Descrizione:</label>
+            <textarea id="projectDesc" rows="4"></textarea>
+
+            <label>Assegna Membri del Team:</label>
+            <div id="membersList" style="background: #fff; padding: 10px; border-radius: 5px; max-height: 150px; overflow-y: auto;">
+                <input type="checkbox" value="2"> Eddy Pasquale (TM)<br>
+                <input type="checkbox" value="3"> Francesca Rossi (TM)
+            </div>
+
+            <button type="submit" style="margin-top: 20px; width: 100%;">Crea Progetto</button>
+            <p><a href="pm_dashboard.html">Annulla e torna indietro</a></p>
+        </form>
+    </div>
+    <script src="synergy_logic.js"></script>
+</body>
+</html>
